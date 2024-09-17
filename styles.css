@@ -69,6 +69,7 @@ nav a:hover {
     text-decoration: underline;
 }
 
+/* Content styling */
 .content {
     flex: 1; /* Allows the content to grow and push the footer down */
     padding: 20px;
@@ -99,6 +100,36 @@ ul {
     margin-left: 20px;
 }
 
+/* Blog Container */
+.blog-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.blog-box {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+}
+
+.blog-box h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.blog-box p {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Footer styling */
 footer {
     background: #333;
     color: #fff;
@@ -107,131 +138,7 @@ footer {
     margin-top: auto; /* Pushes the footer to the bottom */
 }
 
-/* Style for centering the form */
-.form-container {
-    display: flex;
-    justify-content: center;  /* Horizontally centers the form */
-    align-items: center;      /* Vertically centers if necessary */
-    padding: 20px;
-}
-
-iframe {
-    border: none;
-    max-width: 100%;          /* Ensures it remains responsive */
-}
-
-
-/* Responsive design */
-@media (max-width: 600px) {
-    nav a {
-        display: block;
-        margin: 10px 0;
-    }
-
-    .content {
-        padding: 10px;
-    }
-}
-/* General Styles */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-.container {
-    width: 80%;
-    margin: 0 auto;
-}
-
-/* Header Styles */
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2em;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 15px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-/* About Us Styles */
-#about-us {
-    padding: 40px 20px;
-    background: #f9f9f9;
-    text-align: center;
-}
-
-#about-us h1 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-}
-
-#about-us h2 {
-    font-size: 2em;
-    margin-top: 20px;
-    margin-bottom: 10px;
-}
-
-#about-us p {
-    font-size: 1.2em;
-    color: #555;
-    line-height: 1.6;
-}
-
-.co-founders {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.co-founder {
-    margin: 20px;
-    width: 250px;
-    text-align: center;
-}
-
-.co-founder img {
-    width: 100%;
-    border-radius: 50%;
-    margin-bottom: 10px;
-}
-
-.co-founder h3 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-}
-
-.co-founder p {
-    font-size: 1em;
-    color: #555;
-}
-
-/* Footer Styles */
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
-}
-
-/* Styles for CTA Button (Link to Submit Page) */
+/* Style for CTA Button (Link to Submit Page) */
 .cta-button {
     display: inline-block;
     padding: 12px 24px;
@@ -253,4 +160,16 @@ footer {
 .cta-button:focus {
     outline: none;
     box-shadow: 0 0 0 3px #9d352b; /* Focus ring */
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .content, .blog-box {
+        padding: 10px;
+    }
 }
