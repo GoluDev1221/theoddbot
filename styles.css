@@ -69,17 +69,6 @@ nav a:hover {
     text-decoration: underline;
 }
 
-/* Content styling */
-.content {
-    flex: 1; /* Allows the content to grow and push the footer down */
-    padding: 20px;
-    max-width: 800px;
-    margin: 0 auto;
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
 /* Blog container styling */
 .blog-container {
     display: flex;
@@ -146,58 +135,6 @@ nav a:hover {
     box-shadow: 0 0 0 3px #9d352b; /* Focus ring */
 }
 
-/* About Us Styles */
-#about-us {
-    padding: 40px 20px;
-    background: #f9f9f9;
-    text-align: center;
-}
-
-#about-us h1 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-}
-
-#about-us h2 {
-    font-size: 2em;
-    margin-top: 20px;
-    margin-bottom: 10px;
-}
-
-#about-us p {
-    font-size: 1.2em;
-    color: #555;
-    line-height: 1.6;
-}
-
-.co-founders {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.co-founder {
-    margin: 20px;
-    width: 250px;
-    text-align: center;
-}
-
-.co-founder img {
-    width: 100%;
-    border-radius: 50%;
-    margin-bottom: 10px;
-}
-
-.co-founder h3 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-}
-
-.co-founder p {
-    font-size: 1em;
-    color: #555;
-}
-
 /* Footer Styles */
 footer {
     background-color: #333;
@@ -206,39 +143,11 @@ footer {
     text-align: center;
 }
 
-/* Styles for CTA Button (Link to Submit Page) */
-.cta-button {
-    display: inline-block;
-    padding: 12px 24px;
-    font-size: 1.2em;
-    color: #fff;
-    background-color: #e55347; /* Primary color for CTA */
-    border: none;
-    border-radius: 6px;
-    text-decoration: none;
-    text-align: center;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.cta-button:hover {
-    background-color: #f13f2e; /* Darker shade for hover effect */
-    transform: scale(1.05); /* Slightly increase size on hover */
-}
-
-.cta-button:focus {
-    outline: none;
-    box-shadow: 0 0 0 3px #9d352b; /* Focus ring */
-}
-
 /* Responsive design */
 @media (max-width: 600px) {
     nav a {
         display: block;
         margin: 10px 0;
-    }
-
-    .content {
-        padding: 10px;
     }
 
     .blog-container {
