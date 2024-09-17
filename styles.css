@@ -1,182 +1,111 @@
-/* Reset some basic styles */
-body, h1, h2, h3, p {
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f8f9fa;
     margin: 0;
     padding: 0;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: #f4f4f4;
-}
-
-/* Header styles */
 header {
-    background-color: #ff5722; /* Tomato orange */
-    color: #fff;
-    padding: 20px 0;
+    background-color: #ff6f61; /* Tomato orange */
+    color: white;
+    padding: 20px;
     text-align: center;
 }
 
 .header-container {
     display: flex;
-    justify-content: center;
     align-items: center;
-    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
 }
 
 .logo {
-    max-width: 150px;
-    height: auto;
+    height: 60px;
 }
 
 .header-text h1 {
-    font-size: 3rem;
-    font-weight: bold;
-    color: #fff;
-    margin: 10px 0;
+    margin: 0;
+    font-size: 2rem;
 }
 
 .header-text p {
-    font-size: 1.5rem;
-    color: #fff;
+    margin: 0;
+    font-size: 1.1rem;
 }
 
-/* Navigation styles */
 nav {
-    background-color: #333;
-    color: #fff;
+    background-color: #ff6f61; /* Tomato orange */
+    color: white;
     text-align: center;
 }
 
 nav a {
-    color: #fff;
+    display: inline-block;
+    color: white;
     text-decoration: none;
     padding: 14px 20px;
-    display: inline-block;
+    font-size: 1.1rem;
 }
 
 nav a.active {
-    background-color: #ff5722; /* Tomato orange */
-    border-radius: 5px;
+    border-bottom: 3px solid #fff;
 }
 
 nav a:hover {
-    background-color: #555;
+    background-color: #e65c50; /* Slightly darker tomato orange */
 }
 
-/* Content styles */
-.content {
+main.content {
     padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
+    max-width: 1000px;
+    margin: auto;
 }
 
-h2 {
-    color: #ff5722; /* Tomato orange */
-    border-bottom: 2px solid #ff5722;
-    padding-bottom: 5px;
-    margin-bottom: 20px;
-}
-
-p {
-    margin-bottom: 20px;
-}
-
-/* Blog styles */
 .blog-container {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 20px;
 }
 
 .blog-box {
-    background: #fff;
+    background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    flex: 1 1 calc(50% - 20px); /* Adjust width to fit two per row with margin */
-    box-sizing: border-box;
 }
 
 .blog-box h3 {
     margin-top: 0;
-    color: #ff5722;
 }
 
 .blog-box p {
-    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #555;
 }
 
 .cta-button {
     display: inline-block;
+    background-color: #ff6f61; /* Tomato orange */
+    color: white;
     padding: 10px 20px;
-    background-color: #ff5722; /* Tomato orange */
-    color: #fff;
     text-decoration: none;
     border-radius: 5px;
+    font-weight: bold;
 }
 
 .cta-button:hover {
-    background-color: #e64a19; /* Darker tomato orange */
+    background-color: #e65c50; /* Slightly darker tomato orange */
 }
 
-/* Footer styles */
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #ff6f61; /* Tomato orange */
+    color: white;
     text-align: center;
-    padding: 10px 0;
+    padding: 10px;
     position: fixed;
     width: 100%;
     bottom: 0;
-}
-
-footer p {
-    margin: 0;
-}
-
-/* Blog post page styles */
-.blog-post {
-    max-width: 800px;
-    margin: 20px auto;
-    background: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.blog-post h1 {
-    color: #ff5722;
-}
-
-.blog-post h2 {
-    color: #ff5722;
-}
-
-.blog-post p {
-    margin-bottom: 20px;
-}
-
-.blog-post .cta-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #ff5722;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 20px;
-}
-
-.blog-post .cta-button:hover {
-    background-color: #e64a19;
-}
-
-/* Responsive design */
-@media (max-width: 768px) {
-    .blog-box {
-        flex: 1 1 100%; /* Stack blog boxes on small screens */
-    }
 }
