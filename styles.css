@@ -61,7 +61,7 @@ nav a {
     text-decoration: none;
     margin: 0 15px;
     font-weight: bold;
-    transition: color 0.3s;
+    transition: color 0.3s, text-decoration 0.3s;
 }
 
 nav a:hover {
@@ -69,7 +69,12 @@ nav a:hover {
     text-decoration: underline;
 }
 
-/* Content styling */
+nav a.active {
+    color: #ff6347; /* Tomato color for active link */
+    text-decoration: underline;
+}
+
+/* Main content styling */
 .content {
     flex: 1; /* Allows the content to grow and push the footer down */
     padding: 20px;
@@ -80,49 +85,50 @@ nav a:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Blog container styling */
+h1, h2, h3 {
+    color: #ff6347; /* Tomato color */
+}
+
+h2 {
+    border-bottom: 2px solid #ff6347;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+/* Blog boxes styling */
 .blog-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
     gap: 20px;
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
 }
 
-/* Blog box styling */
 .blog-box {
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    max-width: 300px;
-    width: 100%;
-    text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.blog-box:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-.blog-box h2 {
-    color: #ff6347; /* Tomato color */
     padding: 20px;
-    font-size: 1.5em;
-    border-bottom: 2px solid #ff6347;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.blog-box h3 {
+    margin-bottom: 10px;
 }
 
 .blog-box p {
-    padding: 15px;
-    font-size: 1em;
-    color: #555;
-    line-height: 1.6;
+    margin-bottom: 10px;
 }
 
-.blog-box a.cta-button {
+.cta-button {
     display: inline-block;
     padding: 12px 24px;
     font-size: 1.2em;
@@ -132,21 +138,54 @@ nav a:hover {
     border-radius: 6px;
     text-decoration: none;
     text-align: center;
-    margin: 15px;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.blog-box a.cta-button:hover {
+.cta-button:hover {
     background-color: #f13f2e; /* Darker shade for hover effect */
     transform: scale(1.05); /* Slightly increase size on hover */
 }
 
-.blog-box a.cta-button:focus {
+.cta-button:focus {
     outline: none;
     box-shadow: 0 0 0 3px #9d352b; /* Focus ring */
 }
 
-/* About Us Styles */
+/* Form container styling */
+.form-container {
+    display: flex;
+    justify-content: center;  /* Horizontally centers the form */
+    align-items: center;      /* Vertically centers if necessary */
+    padding: 20px;
+}
+
+iframe {
+    border: none;
+    max-width: 100%;          /* Ensures it remains responsive */
+}
+
+/* Footer styling */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto; /* Pushes the footer to the bottom */
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .content {
+        padding: 10px;
+    }
+}
+
+/* About Us page styling */
 #about-us {
     padding: 40px 20px;
     background: #f9f9f9;
@@ -174,6 +213,7 @@ nav a:hover {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    gap: 20px;
 }
 
 .co-founder {
@@ -196,53 +236,4 @@ nav a:hover {
 .co-founder p {
     font-size: 1em;
     color: #555;
-}
-
-/* Footer Styles */
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
-}
-
-/* Styles for CTA Button (Link to Submit Page) */
-.cta-button {
-    display: inline-block;
-    padding: 12px 24px;
-    font-size: 1.2em;
-    color: #fff;
-    background-color: #e55347; /* Primary color for CTA */
-    border: none;
-    border-radius: 6px;
-    text-decoration: none;
-    text-align: center;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.cta-button:hover {
-    background-color: #f13f2e; /* Darker shade for hover effect */
-    transform: scale(1.05); /* Slightly increase size on hover */
-}
-
-.cta-button:focus {
-    outline: none;
-    box-shadow: 0 0 0 3px #9d352b; /* Focus ring */
-}
-
-/* Responsive design */
-@media (max-width: 600px) {
-    nav a {
-        display: block;
-        margin: 10px 0;
-    }
-
-    .content {
-        padding: 10px;
-    }
-
-    .blog-container {
-        flex-direction: column;
-        align-items: center;
-    }
 }
