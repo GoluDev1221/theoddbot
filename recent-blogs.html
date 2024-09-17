@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recent Blogs | The Odd Bot</title>
-    <link rel="stylesheet" href="recent-blogs.css">
+    <link rel="stylesheet" href="styles.css"> <!-- Use the main stylesheet for consistency -->
     <link rel="icon" href="favicon.png" type="image/png">
 </head>
 <body>
@@ -20,21 +20,23 @@
 
     <nav>
         <a href="index.html">Home</a>
-        <a href="recent-blogs.html">Recent Blogs</a>
+        <a href="recent-blogs.html" class="active">Recent Blogs</a> <!-- Add active class for highlighting -->
         <a href="leaderboard.html">Leaderboard</a>
         <a href="submit.html">Submit</a>
         <a href="about.html">About Us</a>
     </nav>
 
-    <main class="blog-container">
+    <main class="content blog-container">
+        <h2>Recent Blogs</h2> <!-- Title for the page -->
+
         <div class="blog-box">
-            <h2>Weird Question #1</h2>
+            <h3>Weird Question #1</h3> <!-- Use h3 for blog titles -->
             <p>This is a short description of the weird question and the funny response...</p>
             <a href="blog-post1.html" class="cta-button">Read More</a>
         </div>
 
         <div class="blog-box">
-            <h2>Weird Question #2</h2>
+            <h3>Weird Question #2</h3>
             <p>This is a short description of the weird question and the funny response...</p>
             <a href="blog-post2.html" class="cta-button">Read More</a>
         </div>
@@ -47,3 +49,4 @@
     </footer>
 </body>
 </html>
+
