@@ -165,6 +165,61 @@ footer {
     border: none;
 }
 
+/* About Us Section Styles */
+
+#about-us {
+    padding: 20px;
+    background-color: #fff8f0; /* Light background to match the tomato orange theme */
+}
+
+#about-us h1 {
+    font-size: 2.5em;
+    color: #ff6f61; /* Tomato orange color */
+    text-align: center;
+    padding: 20px 0;
+}
+
+#about-us h2 {
+    font-size: 1.8em;
+    color: #ff6f61; /* Tomato orange color */
+    border-bottom: 2px solid #ff6f61; /* Underline effect */
+    padding-bottom: 10px;
+    margin: 20px 0;
+}
+
+#about-us p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin: 10px 0;
+    padding: 0 20px;
+}
+
+#about-us .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#about-us .meet-the-cofounders {
+    text-align: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    #about-us h1 {
+        font-size: 2em;
+    }
+
+    #about-us h2 {
+        font-size: 1.5em;
+    }
+
+    #about-us p {
+        font-size: 1em;
+        padding: 0 10px;
+    }
+}
+
 
 /* Co-founders Section (About Us) */
 .co-founders {
