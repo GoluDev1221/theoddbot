@@ -165,61 +165,65 @@ footer {
     border: none;
 }
 
-/* About Us Section Styles */
 
-#about-us {
-    padding: 20px;
-    background-color: #fff8f0; /* Light background to match the tomato orange theme */
+/* Section Styling */
+section {
+    padding: 40px; /* Increased padding for more space around sections */
+    background-color: #fff8f0; /* Light background color for consistency */
+    border-radius: 10px; /* Rounded corners for a softer look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin-bottom: 40px; /* Space below each section */
 }
 
-#about-us h1 {
-    font-size: 2.5em;
+h1 {
+    font-size: 2.8em; /* Larger font size for main headings */
     color: #ff6f61; /* Tomato orange color */
     text-align: center;
     padding: 20px 0;
+    margin: 0; /* Remove default margin */
 }
 
-#about-us h2 {
-    font-size: 1.8em;
+h2 {
+    font-size: 2em; /* Larger font size for subheadings */
     color: #ff6f61; /* Tomato orange color */
-    border-bottom: 2px solid #ff6f61; /* Underline effect */
-    padding-bottom: 10px;
-    margin: 20px 0;
+    border-bottom: 3px solid #ff6f61; /* Thicker underline for emphasis */
+    padding-bottom: 15px;
+    margin: 30px 0 15px; /* More space above and below headings */
 }
 
-#about-us p {
-    font-size: 1.2em;
-    line-height: 1.6;
-    margin: 10px 0;
-    padding: 0 20px;
+p {
+    font-size: 1.4em; /* Slightly larger font size for better readability */
+    line-height: 1.8; /* Increased line height for improved readability */
+    margin: 20px 0; /* More space between paragraphs */
+    padding: 0 25px; /* Added padding for better text alignment */
 }
 
-#about-us .container {
-    max-width: 800px;
+.container {
+    max-width: 900px; /* Wider container for more content space */
     margin: 0 auto;
     padding: 20px;
 }
 
-#about-us .meet-the-cofounders {
+.meet-the-cofounders {
     text-align: center;
+    margin-top: 40px; /* Added space above this section */
 }
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-    #about-us h1 {
-        font-size: 2em;
+    h1 {
+        font-size: 2.2em; /* Adjusted font size for smaller screens */
     }
 
-    #about-us h2 {
-        font-size: 1.5em;
+    h2 {
+        font-size: 1.7em; /* Adjusted font size for smaller screens */
     }
 
-    #about-us p {
-        font-size: 1em;
-        padding: 0 10px;
+    p {
+        font-size: 1.1em; /* Adjusted font size for smaller screens */
+        padding: 0 15px; /* Adjusted padding for smaller screens */
     }
 }
-
 
 /* Co-founders Section (About Us) */
 .co-founders {
