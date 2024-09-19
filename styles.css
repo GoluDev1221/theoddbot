@@ -150,12 +150,21 @@ footer {
 }
 
 /* Form Container for Submit Page */
+.form-container {
+    width: 100%;              /* Full width */
+    display: block;
+    max-width: 800px;          /* Ensure form doesn't stretch too wide */
+    margin: 0 auto;            /* Center horizontally */
+    height: 900px;             /* Set the same height as iframe */
+}
+
 .form-container iframe {
     width: 100%;
     max-width: 800px;
     height: 900px;
     border: none;
 }
+
 
 /* Co-founders Section (About Us) */
 .co-founders {
