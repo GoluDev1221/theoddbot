@@ -1,21 +1,19 @@
-/* General Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Arial', sans-serif;
-    color: #2E2E2E; /* Neutral text color */
+    color: #2E2E2E; 
 }
 
 body {
-    background-color: #FFF8F0; /* Light background to give a clean look */
+    background-color: #FFF8F0; 
     color: #2E2E2E;
     line-height: 1.6;
 }
 
-/* Header Styles */
 header {
-    background-color: #FF6347; /* Main brand color: tomato orange */
+    background-color: #FF6347; 
     padding: 20px;
     text-align: center;
 }
@@ -38,11 +36,10 @@ header .logo {
 }
 
 .header-text p {
-    color: #FFE4D1; /* Slightly lighter shade for tagline */
+    color: #FFE4D1; 
     font-size: 1.2rem;
 }
 
-/* Navigation Styles */
 nav {
     background-color: #FF7F50;
     padding: 15px;
@@ -60,21 +57,19 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #FF6347; /* Darker shade for hover */
+    background-color: #FF6347; 
 }
 
 nav a.active {
-    background-color: #E55335; /* Active link style */
+    background-color: #E55335; 
 }
 
-/* Content Styles */
 .content {
     padding: 20px;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-/* Blog Box Styles */
 .blog-container {
     display: flex;
     flex-direction: column;
@@ -83,7 +78,7 @@ nav a.active {
 }
 
 .blog-box {
-    background-color: #FFECD9; /* Light background for each blog box */
+    background-color: #FFECD9;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -120,7 +115,6 @@ nav a.active {
     background-color: #E55335;
 }
 
-/* Blog Post Styles */
 .blog-post h1 {
     font-size: 2.5rem;
     color: #FF6347;
@@ -140,7 +134,6 @@ nav a.active {
     line-height: 1.8;
 }
 
-/* Footer Styles */
 footer {
     background-color: #FF6347;
     color: #fff;
@@ -149,13 +142,12 @@ footer {
     margin-top: 40px;
 }
 
-/* Form Container for Submit Page */
 .form-container {
-    width: 100%;              /* Full width */
+    width: 100%;             
     display: block;
-    max-width: 800px;          /* Ensure form doesn't stretch too wide */
-    margin: 0 auto;            /* Center horizontally */
-    height: 900px;             /* Set the same height as iframe */
+    max-width: 800px;        
+    margin: 0 auto;
+    height: 900px;          
 }
 
 .form-container iframe {
@@ -166,66 +158,64 @@ footer {
 }
 
 
-/* Section Styling */
 section {
-    padding: 40px; /* Increased padding for more space around sections */
-    background-color: #fff8f0; /* Light background color for consistency */
-    border-radius: 10px; /* Rounded corners for a softer look */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    margin-bottom: 40px; /* Space below each section */
+    padding: 40px; 
+    background-color: #fff8f0; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    margin-bottom: 40px; 
 }
 
 h1 {
-    font-size: 2.8em; /* Larger font size for main headings */
-    color: #ff6f61; /* Tomato orange color */
+    font-size: 2.8em; 
+    color: #ff6f61;
     text-align: center;
     padding: 20px 0;
-    margin: 0; /* Remove default margin */
+    margin: 0;
 }
 
 h2 {
-    font-size: 2em; /* Larger font size for subheadings */
-    color: #ff6f61; /* Tomato orange color */
-    border-bottom: 3px solid #ff6f61; /* Thicker underline for emphasis */
+    font-size: 2em; 
+    color: #ff6f61;
+    border-bottom: 3px solid #ff6f61; 
     padding-bottom: 15px;
-    margin: 30px 0 15px; /* More space above and below headings */
+    margin: 30px 0 15px; 
 }
 
 p {
-    font-size: 1.4em; /* Slightly larger font size for better readability */
-    line-height: 1.8; /* Increased line height for improved readability */
-    margin: 20px 0; /* More space between paragraphs */
-    padding: 0 25px; /* Added padding for better text alignment */
+    font-size: 1.4em; 
+    line-height: 1.8; 
+    margin: 20px 0; 
+    padding: 0 25px; 
 }
 
 .container {
-    max-width: 900px; /* Wider container for more content space */
+    max-width: 900px; 
     margin: 0 auto;
     padding: 20px;
 }
 
 .meet-the-cofounders {
     text-align: center;
-    margin-top: 40px; /* Added space above this section */
+    margin-top: 40px; 
 }
 
-/* Responsive Styles */
+
 @media (max-width: 768px) {
     h1 {
-        font-size: 2.2em; /* Adjusted font size for smaller screens */
+        font-size: 2.2em; 
     }
 
     h2 {
-        font-size: 1.7em; /* Adjusted font size for smaller screens */
+        font-size: 1.7em; 
     }
 
     p {
-        font-size: 1.1em; /* Adjusted font size for smaller screens */
-        padding: 0 15px; /* Adjusted padding for smaller screens */
+        font-size: 1.1em; 
+        padding: 0 15px; 
     }
 }
 
-/* Co-founders Section (About Us) */
 .co-founders {
     display: flex;
     gap: 20px;
@@ -259,7 +249,6 @@ p {
     color: #3A3A3A;
 }
 
-/* Responsive Styles */
 @media screen and (max-width: 768px) {
     .header-container {
         flex-direction: column;
